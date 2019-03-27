@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .aa{width:300px;height: 100px;
+        background-color: darkred;
+        float: left}
+
+        .box{width:300px;margin:0 auto;border:10px solid #000;}
+
+        .div{width:200px;height:200px;background:red;float:left;}
+
+        /*.clear:after{content:"";display:block;clear:both;}*/
+
+        </style>
+</head>
+<body>
+<!-- 使用clear样式为此div追加一个没有内容的块，且块两边无浮动-->
+<div class="aa"></div>
+<div class="box clear">
+
+    <div class="div"></div>
+
+</div>
+</body>
+</html>

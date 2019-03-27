@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--万一“box”元素还有父元素“abox”呢，那么“abox”也需要加浮动，再万一“abox”元素还有父元素“bbox”呢，这样会造成-->
+    <!--页面中所有元素都要加浮动。-->
+    <!--父元素“box”的外边距margin左右居中失效。-->
+    <style>
+        .box {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            /*float: left;*/
+            /*overflow: auto;*/
+
+        }
+        .div {
+            width: 200px;
+             height: 200px;
+            background-color: red;
+            float: left;
+        }
+        .clearfx {
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="div"></div>
+    <!--<br clear="all"/>-->
+    <!--<div class="clearfx"></div>-->
+</div>
+</body>
+</html>
