@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>W3C(w3cschool.cn)</title>
+    <style>
+        div
+        {
+            width:100px;
+            height:75px;
+            background-color:red;
+            border:1px solid black;
+            transition: width 2s,height 2s ,transform 2s,right 2s;
+            /*position: absolute;*/
+        }
+        div#div2:hover
+        {
+            right: 0;
+            transform:rotate(180deg);
+            /*transform:rotateX(120deg);*/
+        }
+        #box {
+            width: 200px;
+            height: 100px;
+            background-color: #99ff00;
+            padding: 20px;
+            border: 2px solid #CCCCCC;
+            box-sizing: border-box;
+        }
+        a {
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+<p><b>注意:</b> Internet Explorer 9 (以及更早版本的浏览器) 和 Opera 不支持 rotateX 方法.</p>
+<div id="div2" >Hello. This is a DIV element.</div>
+<div id="box"><a href="">sdqe</a></div>
+</body>
+<script>
+    function ff(f,a) {
+       f(a)
+    }
+    function  f(b) {
+        alert(b+10)
+    }
+    ff(f,10)
+</script>
+</html>
